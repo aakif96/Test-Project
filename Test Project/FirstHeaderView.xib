@@ -15,14 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="412" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yge-F0-Q4j">
-                    <rect key="frame" x="6" y="14.666666666666664" width="47.666666666666664" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yge-F0-Q4j">
+                    <rect key="frame" x="6" y="14.666666666666664" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="waj-RT-Vp8"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKj-dd-Jbl">
-                    <rect key="frame" x="206" y="15" width="100" height="20"/>
+                    <rect key="frame" x="186" y="15" width="100" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="9Ef-tY-LtZ"/>
                     </constraints>
@@ -44,11 +47,11 @@
             <color key="backgroundColor" systemColor="systemRedColor"/>
             <constraints>
                 <constraint firstItem="tKj-dd-Jbl" firstAttribute="firstBaseline" secondItem="PO3-Js-uT0" secondAttribute="firstBaseline" id="0x3-KI-Cno"/>
+                <constraint firstItem="tKj-dd-Jbl" firstAttribute="leading" secondItem="Yge-F0-Q4j" secondAttribute="trailing" id="1NX-BJ-ANS"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PO3-Js-uT0" secondAttribute="trailing" constant="6" id="5gg-3x-5SY"/>
                 <constraint firstItem="Yge-F0-Q4j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="7dg-SC-TbW"/>
                 <constraint firstItem="tKj-dd-Jbl" firstAttribute="baseline" secondItem="PO3-Js-uT0" secondAttribute="baseline" id="Eoa-eJ-kux"/>
                 <constraint firstItem="tKj-dd-Jbl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bqD-rS-iCD"/>
-                <constraint firstItem="tKj-dd-Jbl" firstAttribute="trailing" secondItem="PO3-Js-uT0" secondAttribute="leading" id="fmD-G5-F51"/>
                 <constraint firstItem="Yge-F0-Q4j" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kFB-Gs-6YI"/>
                 <constraint firstItem="tKj-dd-Jbl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="uxF-1l-6lq"/>
             </constraints>
