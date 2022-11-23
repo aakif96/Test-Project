@@ -10,8 +10,11 @@ import UIKit
 
 struct News {
     let title: String
-    var image: UIImage?
-    var imageUrl: String
+    var titleImage: UIImage?
+    var largeImgUrl: String
+    var smallImageUrl: String
+    var rotatedImageUrl: String
+    
     
     
 }

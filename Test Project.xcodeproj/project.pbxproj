@@ -9,7 +9,19 @@
 /* Begin PBXBuildFile section */
 		C105AB222924D49A008CBE1A /* Books.xml in Resources */ = {isa = PBXBuildFile; fileRef = C105AB212924D499008CBE1A /* Books.xml */; };
 		C105AB262924D77F008CBE1A /* News.xml in Resources */ = {isa = PBXBuildFile; fileRef = C105AB252924D77F008CBE1A /* News.xml */; };
+		C1934D36292B651C009B9613 /* HighLowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1934D35292B651C009B9613 /* HighLowCell.swift */; };
+		C1934D38292B70D7009B9613 /* FirstHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1934D37292B70D7009B9613 /* FirstHeaderView.xib */; };
+		C1934D3C292B7D88009B9613 /* DetailsMarketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1934D3B292B7D88009B9613 /* DetailsMarketController.swift */; };
+		C1934D3E292B81CC009B9613 /* DetailsMarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1934D3D292B81CC009B9613 /* DetailsMarketCell.swift */; };
 		C1944AF62924F9F2007AD218 /* HeadNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1944AF52924F9F2007AD218 /* HeadNewsCell.swift */; };
+		C197B805292625F8002F3DE6 /* Alen Akif resume.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C197B804292625F8002F3DE6 /* Alen Akif resume.pdf */; };
+		C197B8072926276F002F3DE6 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197B8062926276F002F3DE6 /* PDFViewController.swift */; };
+		C197B80D29263942002F3DE6 /* DetailsNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197B80C29263942002F3DE6 /* DetailsNewsController.swift */; };
+		C197B80F29266315002F3DE6 /* MarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197B80E29266315002F3DE6 /* MarketCell.swift */; };
+		C197B8112926632D002F3DE6 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197B8102926632D002F3DE6 /* MarketViewController.swift */; };
+		C197B813292665F2002F3DE6 /* MarketsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197B812292665F2002F3DE6 /* MarketsItem.swift */; };
+		C19F0ED3292E04B300239566 /* StartTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F0ED2292E04B300239566 /* StartTabBarController.swift */; };
+		C1A52BD22927C31A007949F9 /* SortStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A52BD12927C31A007949F9 /* SortStatus.swift */; };
 		C1C51E992923C3670092560E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C51E982923C3670092560E /* AppDelegate.swift */; };
 		C1C51E9B2923C3670092560E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C51E9A2923C3670092560E /* SceneDelegate.swift */; };
 		C1C51E9D2923C3670092560E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C51E9C2923C3670092560E /* ViewController.swift */; };
@@ -24,7 +36,19 @@
 /* Begin PBXFileReference section */
 		C105AB212924D499008CBE1A /* Books.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Books.xml; path = ../../Books.xml; sourceTree = "<group>"; };
 		C105AB252924D77F008CBE1A /* News.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = News.xml; path = ../../News.xml; sourceTree = "<group>"; };
+		C1934D35292B651C009B9613 /* HighLowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighLowCell.swift; sourceTree = "<group>"; };
+		C1934D37292B70D7009B9613 /* FirstHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstHeaderView.xib; sourceTree = "<group>"; };
+		C1934D3B292B7D88009B9613 /* DetailsMarketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMarketController.swift; sourceTree = "<group>"; };
+		C1934D3D292B81CC009B9613 /* DetailsMarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMarketCell.swift; sourceTree = "<group>"; };
 		C1944AF52924F9F2007AD218 /* HeadNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadNewsCell.swift; sourceTree = "<group>"; };
+		C197B804292625F8002F3DE6 /* Alen Akif resume.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Alen Akif resume.pdf"; sourceTree = "<group>"; };
+		C197B8062926276F002F3DE6 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		C197B80C29263942002F3DE6 /* DetailsNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNewsController.swift; sourceTree = "<group>"; };
+		C197B80E29266315002F3DE6 /* MarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCell.swift; sourceTree = "<group>"; };
+		C197B8102926632D002F3DE6 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		C197B812292665F2002F3DE6 /* MarketsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsItem.swift; sourceTree = "<group>"; };
+		C19F0ED2292E04B300239566 /* StartTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabBarController.swift; sourceTree = "<group>"; };
+		C1A52BD12927C31A007949F9 /* SortStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortStatus.swift; sourceTree = "<group>"; };
 		C1C51E952923C3670092560E /* Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C51E982923C3670092560E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C51E9A2923C3670092560E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,9 +95,20 @@
 				C1C51E982923C3670092560E /* AppDelegate.swift */,
 				C1C51EAC2923D11D0092560E /* News.swift */,
 				C1C51EB02923D96D0092560E /* NewsViewController.swift */,
+				C197B8102926632D002F3DE6 /* MarketViewController.swift */,
 				C1C51E9A2923C3670092560E /* SceneDelegate.swift */,
 				C1944AF52924F9F2007AD218 /* HeadNewsCell.swift */,
 				C1C51E9C2923C3670092560E /* ViewController.swift */,
+				C197B812292665F2002F3DE6 /* MarketsItem.swift */,
+				C1A52BD12927C31A007949F9 /* SortStatus.swift */,
+				C197B80E29266315002F3DE6 /* MarketCell.swift */,
+				C1934D3D292B81CC009B9613 /* DetailsMarketCell.swift */,
+				C19F0ED2292E04B300239566 /* StartTabBarController.swift */,
+				C1934D3B292B7D88009B9613 /* DetailsMarketController.swift */,
+				C197B80C29263942002F3DE6 /* DetailsNewsController.swift */,
+				C1934D37292B70D7009B9613 /* FirstHeaderView.xib */,
+				C197B8062926276F002F3DE6 /* PDFViewController.swift */,
+				C1934D35292B651C009B9613 /* HighLowCell.swift */,
 				C1C51EB22923F1A00092560E /* NewsCell.swift */,
 				C1C51E9E2923C3670092560E /* Main.storyboard */,
 				C1C51EA12923C36A0092560E /* Assets.xcassets */,
@@ -81,6 +116,7 @@
 				C1C51EA62923C36A0092560E /* Info.plist */,
 				C105AB212924D499008CBE1A /* Books.xml */,
 				C105AB252924D77F008CBE1A /* News.xml */,
+				C197B804292625F8002F3DE6 /* Alen Akif resume.pdf */,
 			);
 			path = "Test Project";
 			sourceTree = "<group>";
@@ -147,6 +183,8 @@
 				C1C51EA22923C36A0092560E /* Assets.xcassets in Resources */,
 				C105AB262924D77F008CBE1A /* News.xml in Resources */,
 				C105AB222924D49A008CBE1A /* Books.xml in Resources */,
+				C197B805292625F8002F3DE6 /* Alen Akif resume.pdf in Resources */,
+				C1934D38292B70D7009B9613 /* FirstHeaderView.xib in Resources */,
 				C1C51EA02923C3670092560E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,12 +196,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1934D36292B651C009B9613 /* HighLowCell.swift in Sources */,
+				C1934D3C292B7D88009B9613 /* DetailsMarketController.swift in Sources */,
 				C1C51E9D2923C3670092560E /* ViewController.swift in Sources */,
+				C19F0ED3292E04B300239566 /* StartTabBarController.swift in Sources */,
 				C1C51E992923C3670092560E /* AppDelegate.swift in Sources */,
 				C1C51EAD2923D11D0092560E /* News.swift in Sources */,
+				C197B80F29266315002F3DE6 /* MarketCell.swift in Sources */,
+				C197B8072926276F002F3DE6 /* PDFViewController.swift in Sources */,
+				C197B80D29263942002F3DE6 /* DetailsNewsController.swift in Sources */,
 				C1C51EB12923D96D0092560E /* NewsViewController.swift in Sources */,
+				C197B8112926632D002F3DE6 /* MarketViewController.swift in Sources */,
 				C1944AF62924F9F2007AD218 /* HeadNewsCell.swift in Sources */,
+				C1A52BD22927C31A007949F9 /* SortStatus.swift in Sources */,
+				C1934D3E292B81CC009B9613 /* DetailsMarketCell.swift in Sources */,
 				C1C51EB32923F1A00092560E /* NewsCell.swift in Sources */,
+				C197B813292665F2002F3DE6 /* MarketsItem.swift in Sources */,
 				C1C51E9B2923C3670092560E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -294,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -311,6 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BCQ6B32XVU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Test Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -338,6 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BCQ6B32XVU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Test Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

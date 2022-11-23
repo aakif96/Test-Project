@@ -9,10 +9,7 @@ import Foundation
 import UIKit
 
 
-struct Book {
-    var bookTitle: String
-    var bookAuthor: String
-}
+
 
 enum Section: String, CaseIterable {
   case listed
@@ -21,6 +18,21 @@ enum Section: String, CaseIterable {
 
 class NewsViewController: UITableViewController, XMLParserDelegate{
     
+    
+    
+    @IBSegueAction func showHeadDetailView(_ coder: NSCoder) -> DetailsNewsController? {
+        let vest = news[0]
+        return DetailsNewsController(coder: coder,news: vest)
+    }
+    @IBSegueAction func showDetailView(_ coder: NSCoder) -> DetailsNewsController? {
+        guard let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("Nothing selected")
+        }
+        let vest = news[indexPath.row]
+        
+        return DetailsNewsController(coder: coder,news: vest)
+    }
+    
     var news: [News] = []
     var elementName: String = String()
     var newsTitle = String()
@@ -28,17 +40,26 @@ class NewsViewController: UITableViewController, XMLParserDelegate{
     var starterUrl = String("https://cdn.ttweb.net/News/images/")
     var smallImgEndUrl = String(".jpg?preset=w220_q40")
     var largeImgEndUrl = String(".jpg?preset=w320_q50")
+    var rotatedImgUrl = String(".jpg?preset=w800_q70")
     var urlNews = String("https://www.teletrader.rs/downloads/tt_news_list.xml")
     var username = String("android_tt")
     var password = String("Sk3M!@p9e")
+    var broj = 20.0
+    @objc func ispis(){
+        print("caoo")
+        broj+=2
+    }
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        //var gameTimer: Timer?
+        //gameTimer = Timer.scheduledTimer(timeInterval: broj, target: self, selector: #selector(ispis), userInfo: nil, repeats: true)
         
-       
+        
         let url = URL(string: urlNews)
-        var request = URLRequest(url: url!)
+        let request = URLRequest(url: url!)
 //        request.httpMethod = "GET"
         let config = URLSessionConfiguration.default
         let userPasswordString = "\(username):\(password)"
@@ -95,21 +116,38 @@ class NewsViewController: UITableViewController, XMLParserDelegate{
             let cell = tableView.dequeueReusableCell(withIdentifier: "HeadNewsCell", for: indexPath) as! HeadNewsCell
             let vest = news[indexPath.row]
             cell.titelLabel?.text = vest.title
-            if let data = try? Data(contentsOf: URL(string: vest.imageUrl + largeImgEndUrl)!) {
-                // Create Image and Update Image View
-                cell.newsImageView?.image = UIImage(data: data)
-                
-            }       // cell.
+            
+            if UIApplication.shared.statusBarOrientation.isLandscape {
+                if let data = try? Data(contentsOf: URL(string: vest.rotatedImageUrl)!) {
+                    // Create Image and Update Image View
+                    cell.newsImageView.image = UIImage(data: data)
+                    
+                    
+                }
+            } else {
+                if let data = try? Data(contentsOf: URL(string: vest.largeImgUrl)!) {
+                    // Create Image and Update Image View
+                    cell.newsImageView.image = UIImage(data: data)
+                    
+                }
+                       
+            }
+            
+            
+            
+            
+            
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath) as! NewsCell
             let vest = news[indexPath.row]
             
             cell.newsTitleLabel?.text = vest.title
-            if let data = try? Data(contentsOf: URL(string: vest.imageUrl + smallImgEndUrl)!) {
+            if let data = try? Data(contentsOf: URL(string: vest.smallImageUrl)!) {
                 // Create Image and Update Image View
-                cell.newsSmallImageView?.image = UIImage(data: data)
-            }       // cell.
+                cell.newsSmallImageView.image = UIImage(data: data)
+                
+            }
             return cell
         }
     }
@@ -132,8 +170,14 @@ class NewsViewController: UITableViewController, XMLParserDelegate{
     // 2
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "NewsArticle" {
-            var finalUrl = starterUrl + imageUrl
-            let new = News(title: newsTitle,imageUrl: finalUrl)
+            let finalUrlSml = starterUrl + imageUrl + smallImgEndUrl
+            let finalUrlLrg = starterUrl + imageUrl + largeImgEndUrl
+            let finalUrlRt = starterUrl + imageUrl + rotatedImgUrl
+            let new = News(title: newsTitle,largeImgUrl: finalUrlLrg,smallImageUrl: finalUrlSml,rotatedImageUrl: finalUrlRt)
+           
+            
+            
+            
             news.append(new)
         }
         if elementName == "Result" {
