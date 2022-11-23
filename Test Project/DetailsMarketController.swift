@@ -27,7 +27,23 @@ class DetailsMarketController: UITableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         mvc.controllerDict.removeValue(forKey: marketItem.id)
     }
-    
+    func formatString(word:String) -> String{
+        var broj = 0
+        var result = ""
+        var has = false
+        for ch in word{
+            if ch == "." || has{
+                broj+=1
+                has = true
+            }
+            
+            result += String(ch)
+            if broj == 3{
+                return result
+            }
+        }
+        return result
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsMarketCell", for: indexPath) as! DetailsMarketCell
         cell.dataLabel.text = dataLabels[indexPath.row]
@@ -61,7 +77,7 @@ class DetailsMarketController: UITableViewController {
             cell.dataValueLabel.textColor = .label
             cell.dataValueLabel.backgroundColor = .none
         case 7:
-            cell.dataValueLabel.text = String(marketItem.last)
+            cell.dataValueLabel.text = formatString(word:String(marketItem.last))
             cell.dataValueLabel.textColor = .label
             if marketItem.color == 0{
                 cell.dataValueLabel.backgroundColor = .green
@@ -95,7 +111,7 @@ class DetailsMarketController: UITableViewController {
             cell.dataValueLabel.textColor = .label
             cell.dataValueLabel.backgroundColor = .none
         case 14:
-            cell.dataValueLabel.text = String(marketItem.change)
+            cell.dataValueLabel.text = formatString(word:String(marketItem.change))
             if marketItem.change > 0 {
                 cell.dataValueLabel.textColor = .green
             }
@@ -107,7 +123,7 @@ class DetailsMarketController: UITableViewController {
             }
             cell.dataValueLabel.backgroundColor = .none
         case 15:
-            cell.dataValueLabel.text = String(marketItem.changePercent)
+            cell.dataValueLabel.text = formatString(word:String(marketItem.changePercent)) + "%"
             if marketItem.changePercent > 0 {
                 cell.dataValueLabel.textColor = .green
             }
