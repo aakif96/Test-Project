@@ -343,7 +343,10 @@ class MarketViewController: UITableViewController, XMLParserDelegate{
     }
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "Symbol" {
-            let symbol = MarketsItem(id: itemID, name: itemName, ticketSymbol: itemTickerSymbol,isin: itemIsin,currency: itemCurrency,stockExchangeName: itemStockExchangeName,decorativeName: itemDecorativeName,last: Double(itemLast)!,high: Double(itemHigh)!,low: Double(itemLow)!,bid: Double(itemBid)!,ask: Double(itemAsk)!,volume: Double(itemVolume)!,dataTime: itemDateTime,change: Double(itemChange)!,changePercent: Double(itemChangePercent)!)
+            
+           
+            
+            let symbol = MarketsItem(id: itemID, name: itemName, ticketSymbol: itemTickerSymbol,isin: itemIsin,currency: itemCurrency,stockExchangeName: itemStockExchangeName,decorativeName: itemDecorativeName,last: Double(itemLast)!,high: Double(itemHigh)!,low: Double(itemLow)!,bid: Double(itemBid)!,ask: Double(itemAsk)!,volume: Double(itemVolume)!,dataTime: formatDate(itemDate: itemDateTime),change: Double(itemChange)!,changePercent: Double(itemChangePercent)!)
            
             
             
@@ -428,7 +431,11 @@ class MarketViewController: UITableViewController, XMLParserDelegate{
         
         refreshControl?.endRefreshing()
     }
-    
+    func formatDate(itemDate:String) ->Date{
+        let expectedFormat = Date.ISO8601FormatStyle()
+        let date = try! Date(itemDate+"Z",strategy: expectedFormat)
+        return date
+    }
     func uploadMarketItems(){
         let url = URL(string: urlMarkets)
         let request = URLRequest(url: url!)

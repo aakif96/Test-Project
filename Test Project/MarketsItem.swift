@@ -23,12 +23,12 @@ class MarketsItem{
     var bid: Double
     var ask: Double
     var volume: Double
-    var dataTime:String
+    var dataTime:Date
     var change: Double
     var changePercent:Double
     var color: Int
   
-    init(id: String, name: String, ticketSymbol: String, isin: String, currency: String, stockExchangeName: String, decorativeName: String, last: Double, high: Double, low: Double, bid: Double, ask: Double, volume: Double, dataTime: String, change: Double, changePercent: Double) {
+    init(id: String, name: String, ticketSymbol: String, isin: String, currency: String, stockExchangeName: String, decorativeName: String, last: Double, high: Double, low: Double, bid: Double, ask: Double, volume: Double, dataTime: Date, change: Double, changePercent: Double) {
         self.id = id
         self.name = name
         self.ticketSymbol = ticketSymbol

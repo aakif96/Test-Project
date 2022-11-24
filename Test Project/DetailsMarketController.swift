@@ -107,7 +107,7 @@ class DetailsMarketController: UITableViewController {
             cell.dataValueLabel.textColor = .label
             cell.dataValueLabel.backgroundColor = .none
         case 13:
-            cell.dataValueLabel.text = marketItem.dataTime
+            cell.dataValueLabel.text = marketItem.dataTime.formatted(.dateTime.day().month(.wide).year().hour().minute())
             cell.dataValueLabel.textColor = .label
             cell.dataValueLabel.backgroundColor = .none
         case 14:
