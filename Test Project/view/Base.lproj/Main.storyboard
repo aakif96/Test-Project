@@ -135,7 +135,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzz-ZK-mQT">
-                                            <rect key="frame" x="6" y="35" width="178" height="20.333333333333329"/>
+                                            <rect key="frame" x="6" y="35" width="180" height="20.333333333333329"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="luJ-Ov-zQX"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -159,6 +162,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="4d6-ac-zS5" secondAttribute="trailing" id="9G0-yH-VNP"/>
                                                 <constraint firstAttribute="trailing" secondItem="sbM-Wb-8rJ" secondAttribute="trailing" id="j2h-NC-GUm"/>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="rMg-Ci-A9d"/>
                                                 <constraint firstAttribute="width" constant="100" id="xyS-JW-xOw"/>
                                             </constraints>
                                         </stackView>
@@ -191,7 +195,6 @@
                                         <constraint firstItem="vzz-ZK-mQT" firstAttribute="leading" secondItem="HFC-Mh-y1U" secondAttribute="leading" constant="6" id="HE8-Ba-4hR"/>
                                         <constraint firstAttribute="trailing" secondItem="eNS-AX-thj" secondAttribute="trailing" constant="6" id="Jou-bp-3wm"/>
                                         <constraint firstItem="eNS-AX-thj" firstAttribute="centerY" secondItem="HFC-Mh-y1U" secondAttribute="centerY" id="S9j-MR-4SI"/>
-                                        <constraint firstItem="Gma-FS-LgX" firstAttribute="trailing" secondItem="eNS-AX-thj" secondAttribute="leading" id="mFp-A8-mLA"/>
                                         <constraint firstItem="vzz-ZK-mQT" firstAttribute="trailing" secondItem="Gma-FS-LgX" secondAttribute="leading" id="rs3-dg-O8q"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -419,20 +422,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsMarketCell" id="lGW-cR-VkA" customClass="DetailsMarketCell" customModule="Test_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="390" height="43.333332061767578"/>
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lGW-cR-VkA" id="nLx-D3-Qbu">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.333332061767578"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HO-3a-5qI">
-                                            <rect key="frame" x="5" y="10.999999999999998" width="385" height="21.333333333333329"/>
+                                            <rect key="frame" x="5" y="11.000000000000002" width="385" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1o-vz-eXw">
-                                            <rect key="frame" x="343" y="10.999999999999998" width="42" height="21.333333333333329"/>
+                                            <rect key="frame" x="343" y="11.000000000000002" width="42" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
