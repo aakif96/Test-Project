@@ -115,6 +115,7 @@
                                         <constraint firstItem="bnm-w1-1et" firstAttribute="centerY" secondItem="UYB-CH-XXv" secondAttribute="centerY" id="Tsx-Dy-UWc"/>
                                         <constraint firstItem="a0b-V1-w0Y" firstAttribute="baseline" secondItem="bnm-w1-1et" secondAttribute="baseline" id="VIV-gm-maq"/>
                                         <constraint firstItem="IXk-JO-N8S" firstAttribute="firstBaseline" secondItem="a0b-V1-w0Y" secondAttribute="firstBaseline" id="X3n-Os-sKK"/>
+                                        <constraint firstItem="a0b-V1-w0Y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IXk-JO-N8S" secondAttribute="trailing" constant="5" id="bS2-id-U9Z"/>
                                         <constraint firstItem="bnm-w1-1et" firstAttribute="trailing" secondItem="IXk-JO-N8S" secondAttribute="leading" id="edR-2c-Twq"/>
                                         <constraint firstItem="a0b-V1-w0Y" firstAttribute="firstBaseline" secondItem="bnm-w1-1et" secondAttribute="firstBaseline" id="gDZ-2Y-huU"/>
                                         <constraint firstItem="IXk-JO-N8S" firstAttribute="centerY" secondItem="a0b-V1-w0Y" secondAttribute="centerY" id="vMM-4R-wTH"/>
@@ -422,20 +423,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsMarketCell" id="lGW-cR-VkA" customClass="DetailsMarketCell" customModule="Test_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="390" height="42.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lGW-cR-VkA" id="nLx-D3-Qbu">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="42.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HO-3a-5qI">
-                                            <rect key="frame" x="5" y="11.000000000000002" width="385" height="21.666666666666671"/>
+                                            <rect key="frame" x="5" y="11.000000000000002" width="385" height="20.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1o-vz-eXw">
-                                            <rect key="frame" x="343" y="11.000000000000002" width="42" height="21.666666666666671"/>
+                                            <rect key="frame" x="343" y="11.000000000000002" width="42" height="20.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
